@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+.info-text {
+  text-align: center;
+}
+
+.product-image {
+  width: 250px !important;
+  margin: auto;
+}
+
+.product-image img {
+  margin: auto;
+  width: 200px !important;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.mat-card {
+  width: 250px;
+
+  margin: 10px 10px 20px 10px;
+  display: inline-block;
+}

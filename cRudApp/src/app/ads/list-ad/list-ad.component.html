@@ -1,0 +1,22 @@
+<!-- index.component.html -->
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <td>Ad Unit Name</td>
+        <td>Ad Unit Price</td>
+        <td>Actions</td>
+        
+        <td> <a routerLink="/ad/create">ads Add </a> </td>
+    </tr>
+    </thead>
+  
+    <tbody>
+        <tr *ngFor="let adunit of adunits">
+            <td>{{ adunit.unit_name }}</td>
+            <td>{{ adunit.unit_price }}</td>
+            <td><a [routerLink]="['/ad/edit', adunit._id]" class="btn btn-primary">Edit</a></td>
+            <td><button (click)="deleteAdUnit(adunit._id)"  class="btn btn-danger">Delete</button></td>
+  </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,25 @@
+
+
+
+
+<mat-toolbar color="primary">
+  <span>
+    <a routerLink="/">MyMessages</a>
+        <a mat-button routerLink="#" routerLinkActive="mat-accent">Home</a>
+        <a mat-button routerLink="coins" routerLinkActive="mat-accent">Coins</a>
+        <a mat-button routerLink="adunits" routerLinkActive="mat-accent">Ads</a>
+        <a mat-button routerLink="/gsts" routerLinkActive="mat-accent">GST</a>
+        <a mat-button routerLink="/products" routerLinkActive="mat-accent">Products</a>
+  </span>
+<!-- Search form -->
+
+
+  <span class="example-spacer"></span>
+    <mat-icon >add_shopping_cart</mat-icon>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="accessibility icon">favorite</mat-icon>
+    <mat-icon class="example-icon" aria-hidden="false" >account_box</mat-icon>
+</mat-toolbar>
+
+
+
+  <router-outlet></router-outlet>

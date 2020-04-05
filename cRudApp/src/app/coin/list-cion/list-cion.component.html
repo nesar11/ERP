@@ -1,0 +1,27 @@
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <td>Coin Name</td>
+        <td>Coin Price</td>
+        <td>Date</td>
+        <td>Actions</td>
+        <td> <a routerLink="/coin/create">
+            Add coins
+          </a>
+        </td>
+    </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let coin of coins">
+            <td>{{ coin.name }}</td>
+            <td>{{ coin.price }}</td>
+            <td>{{ coin.lenght }}</td>
+
+            <td>{{ coin.createdAt | date }}</td>
+            <td><a [routerLink]="['/edit', coin._id]" class="btn btn-primary">Edit</a></td>
+            <td><button (click)="deleteCoin(coin._id)"  class="btn btn-danger">Delete</button></td>
+        </tr>
+    </tbody>
+  </table>
